@@ -122,4 +122,4 @@ echo "今日は".date("Y/m/d").$week[$w]."です";
 
     <button id="pagetop"><a href="#"> page top</a></button>
 
-<?php get_footer(); ?>    
+<?php get_footer(); ?>
