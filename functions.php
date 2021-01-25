@@ -16,3 +16,18 @@ function sakura_theme_link(){
     wp_enqueue_script('common',get_template_directory_uri().'/js/common.js',array('jquery','iscroll','drawer-js'),'1.0.0',true);
 }
 add_action('wp_enqueue_scripts','sakura_theme_link');
+
+function sakura_theme_init(){
+    register_post_type(
+        'daily',[
+            'labels' =>[
+                'name' => '日報'
+            ],
+            'public' => true,
+            'menu_icon' => 'dashicons-format-aside',
+            'menu_position' => 5,
+            'show_in_rest' => true,
+
+        ]);
+}
+add_action('init','sakura_theme_init');
