@@ -88,9 +88,11 @@ echo "今日は".date("Y/m/d").$week[$w]."です";
             <?php endif; ?>
                 
             </div>
-            <a href="/news" class="button blog__button">もっと見る</a>
+            <a href="/news" class="button blog__button">もっとみる</a>
 
         </section>
+
+        <a href="/daily" class="button daily__button">日報をみる</a>
 
 
 

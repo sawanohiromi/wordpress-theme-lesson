@@ -28,7 +28,51 @@
     margin: 0 auto;
 }
 
+.daily__button {
+    margin: 0 auto;
+}
+
 .button:hover {
     background-color: lightpink;
 
+}
+
+.post {
+    background-color: linen;
+    display: flex;
+    margin: 1em 0;
+}
+
+.post__content {
+    padding: 1em;
+}
+
+.post__title {
+    color: #070707;
+    font-size: 20px;
+    text-align: left;
+}
+
+.post__text {
+    line-height: 1.5em;
+}
+
+.post__img {
+    width: 360px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px gray;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
 }
