@@ -3,6 +3,11 @@
 function sakura_theme_setup(){
     add_theme_support('post-thumbnails');
     add_image_size( 'category-thumb', 300, 9999 );
+    register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+        //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+          'main-menu' => 'ドロワー内部',
+          'footer-menu'  => 'Footer Menu',
+        ) );
 }
 add_action('after_setup_theme','sakura_theme_setup');
 
@@ -26,6 +31,7 @@ function sakura_theme_link(){
     wp_enqueue_script('jquery',"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js");
     wp_enqueue_script('iscroll',"https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js");
     wp_enqueue_script('drawer-js',"https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js");
+    wp_enqueue_script('fadethis-js',get_template_directory_uri().'/js/jquery.fadethis.js');
     wp_enqueue_script('common-js',get_template_directory_uri().'/js/common.js');
 }
 add_action('wp_enqueue_scripts','sakura_theme_link');

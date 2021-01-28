@@ -45,17 +45,17 @@ echo "今日は".date("Y/m/d").$week[$w]."です";
         <section id="sec3-portfolio" class="slide-bottom" data-plugin-options='{"speed":300,"reverse": false}'>
             <h1>制作実績</h1>
             <div class="portfolio">
-                <div class="portfolio-content">
+                <div class="portfolio-content slide-left">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/thumb_01.png" alt="あいうえお建設様">
                     <h2>あいうえお建設様</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic, saepe quia, officia sequi id alias deleniti nemo excepturi molestias amet nostrum aspernatur laborum quaerat molestiae architecto culpa, ratione at.</p>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio-content slide-bottom">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/thumb_02.png" alt="かきくけこ産業">
                     <h2>かきくけこ産業様</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi vitae repudiandae a sit, quo ex omnis eligendi facilis animi fugiat, minus amet alias dignissimos maxime delectus. Ex dolor dolorum ipsa!</p>
                 </div>
-                <div class="portfolio-content">
+                <div class="portfolio-content slide-right">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/thumb_03.png" alt="さしすせそ興業様">
                     <h2>さしすせそ興業様</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, autem consequuntur! Quae quibusdam eaque inventore, architecto at rerum. Consectetur placeat nostrum cupiditate similique corrupti quos officiis voluptatum ipsam optio veniam?</p>
